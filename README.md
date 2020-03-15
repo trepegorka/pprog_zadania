@@ -1,5 +1,5 @@
 # pprog_zadania
-This is not a "Clear code". 
+This is not a "Clean code". 
 I wrote it only for working at the exit.
 Excuse me, but I'm not doing this for myself. 
 I can write it CLEAN, but not in this repository.
