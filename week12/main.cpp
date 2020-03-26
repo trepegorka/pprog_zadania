@@ -6,7 +6,7 @@ using namespace std;
 double f(double  x)
 {
     return pow(sin(x),2)-x-log(x); //f-cja 1
-    //return sin(x)-pow(x,2)-log(x);  //f-cja 1
+    //return sin(x)-pow(x,2)-log(x);  //f-cja 2
 
 }
 int main()
