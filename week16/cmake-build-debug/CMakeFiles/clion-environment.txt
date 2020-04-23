@@ -1,4 +1,4 @@
-ToolSet: 3.1.4 (local)@D:\IT\Programming\drivers\CygwinCompiller
+ToolSet: 3.1.4 (local)@D:\IT\Programming\drivers\Cygwin
 Options: 
 
 Options:

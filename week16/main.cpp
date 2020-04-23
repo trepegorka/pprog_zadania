@@ -12,7 +12,7 @@ struct Person {
 };
 vector<Person> firm;
 
-void fillInformation(Person person);
+void fillInformation(Person&  person);
 
 void showInformation(const Person &person);
 
@@ -23,18 +23,21 @@ void showAll();
 void showFirmAverageSalary();
 
 int main() {
-    short numberOfEmployyes = 1;
-    Person employee;
-//    for (int i = 0; i < numberOfEmployyes; i++) {
-    cout << "\nPerson №1" << endl;
-    fillInformation(employee);
-    addPersonToFirm(employee);
-    showInformation(firm[1]);
+    short numberOfEmployyes = 2;
+    Person employee[numberOfEmployyes];
+    for (int i = 0; i < numberOfEmployyes; i++) {
+        cout << "\nPerson №" << i+1 << endl;
+        fillInformation(employee[i]);
+        addPersonToFirm(employee[i]);
+        showInformation(firm[i]);
+    }
     showAll();
     showFirmAverageSalary();
+    return 0;
+
 }
 
-void fillInformation(Person person) {
+void fillInformation(Person& person) {
     cout << "Person name: ";
     cin >> person.name;
     cout << "Person surname: ";
@@ -80,23 +83,27 @@ void showInformation(const Person &person) {
     cout << person.surname << endl;
     cout << person.pesel << endl;
     cout << person.averageSalary << endl;
+    cout << "\n";
+    for (int i = 0; i < 20; i++) {
+        cout << "-";
+    }
 }
 
 void addPersonToFirm(const Person &person) {
     firm.push_back(person);
 }
 
-//void showAll() {
-//    for (const Person &person : firm) {
-//        showInformation(person);
-//    }
-//}
-//
-//void showFirmAverageSalary() {
-//    int bb;
-//    for (const Person &person: firm) {
-//        bb = bb + person.averageSalary;
-//    }
-//    bb = bb / firm.size();
-//    cout << "\nAverage salary of firm is: " << bb << endl;
-//}
+void showAll() {
+    for (const Person &person : firm) {
+        showInformation(person);
+    }
+}
+
+void showFirmAverageSalary() {
+    int bb;
+    for (const Person &person: firm) {
+        bb = bb + person.averageSalary;
+    }
+    bb = bb / firm.size();
+    cout << "\nAverage salary of the firm is: " << bb << endl;
+}
