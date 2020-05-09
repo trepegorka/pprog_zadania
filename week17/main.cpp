@@ -40,9 +40,9 @@ int main() {
     cout << *smartPointer << endl;
     // SmartPointer<int> smartPointer2 = smartPointer; //blad ponieważ usunęli link na smartPointer
 
-    unique_ptr<int> p1(new int(5));                 //alokacja pamięci dla inteligentnego wskaźnika za uzywaniem memory
+    unique_ptr<int> p1(new int(5));                 //alokacja pamięci dla inteligentnego wskaznika za uzywaniem memory
     unique_ptr<int> p2; //empty
-    p2 = move(p1);      // -> p2 = p1 
+    p2 = move(p1);      // -> p2 = p1
 
     return 0;
 }
