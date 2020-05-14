@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/IT/Programming/C++/Projects/pprog_zadania/week19/main.cpp
+iostream
+-
+mutex
+-
+vector
+-
+fstream
+-
+
