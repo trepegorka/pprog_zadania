@@ -1,0 +1,3 @@
+/cygdrive/d/IT/Programming/C++/Projects/pprog_zadania/week20/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/IT/Programming/C++/Projects/pprog_zadania/week20/cmake-build-debug/CMakeFiles/week20.dir
+/cygdrive/d/IT/Programming/C++/Projects/pprog_zadania/week20/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/IT/Programming/C++/Projects/pprog_zadania/week20/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+algorithm
+-
+stdio.h
+-
+
